@@ -1,0 +1,28 @@
+.footer {
+  background: var(--bg-secondary, #f8f9fa);
+  color: var(--text-secondary, #818181);
+  font-size: 0.99em;
+  padding: 1.18em 2em;
+  border-top: 1.5px solid var(--border-color, #e9ecef);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.footer__links a {
+  color: var(--primary, #1a73e8);
+  text-decoration: none;
+}
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.35em;
+    font-size: 90%;
+    padding: 0.9em 1em;
+  }
+}
